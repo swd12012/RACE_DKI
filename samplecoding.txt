@@ -1,0 +1,7 @@
+Sample	Animal	File	Treatment
+P1	2303	P1.sorted.bam	Cre-positive
+P2	2304	P2.sorted.bam	Cre-negative
+P3	2307	P3.sorted.bam	Cre-negative
+P4	2308	P4.sorted.bam	Cre-positive
+P5	2309 	P5.sorted.bam	Cre-positive
+P6	2310	P6.sorted.bam	Cre-negative
