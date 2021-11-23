@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=RACE_align      ## Name of the job.
 #SBATCH -p free          ## partition/queue name
-#SBATCH --array=1-5         ## number of tasks to launch, given hint below wc -l $file is helpful
+#SBATCH --array=1-6         ## number of tasks to launch, given hint below wc -l $file is helpful
 #SBATCH --cpus-per-task=2    ## number of cores the job needs, can the programs you run make used of multiple cores?
 
 module load samtools/1.10
