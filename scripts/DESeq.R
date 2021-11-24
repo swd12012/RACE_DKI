@@ -8,21 +8,21 @@ library( "RColorBrewer" )
 library( "genefilter" )
 
 #Read in sample coding table
-sampleInfo <- read.table('samplecoding.txt', header=T)
+sampleInfo <- read.table('samplecoding.txt', header=F)
 
 #Read in count data
 countdata <- read.table('data/out/counts.txt', header=T, row.names=1)
 
 #Remove extraneous rows in countdata
-countdata <- countdata[,6:10]
+countdata <- countdata[,6:11]
 
 #rename and reorder column names
-sampleNames <- c('P68', 'P69', 'P70', 'P71', 'P72')
+sampleNames <- c('P1', 'P2', 'P3', 'P4', 'P5', 'P6')
 names(countdata) <- sampleNames
-countdata <- countdata[,c(4,5,1:3)]
+#countdata <- countdata[,c(4,5,1:3)]
 
 #exclude P69
-countdata2 <- countdata[,c(1:3,5)]
+#countdata2 <- countdata[,c(1:3,5)]
 
 #Read in annotation file
 #annotations <- read.table('mouseENSEMBLID_genename.txt',header=T,sep=',')
